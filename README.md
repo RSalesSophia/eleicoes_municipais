@@ -1,6 +1,6 @@
 ## Diferenças de votos entre homens e mulheres nas eleições municipais no Brasil
 
-Esse repósitorio possui scripts em R para cada eleição. 
+Esse repósitorio possui scripts em R referentes à manipulação e modelagem de dados para cada eleição municipal. 
 
 ### Problema
 <hr class="style1">

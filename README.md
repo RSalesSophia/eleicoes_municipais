@@ -1,5 +1,16 @@
-### Eleições municipais e as diferenças de votos entre homens e mulheres
+## Diferenças de votos entre homens e mulheres nas eleições municipais no Brasil. 
 
-**Utilizando a metodologia de Decomposição de Oaxaca-Blinder, verifica-se as diferenças de votos obtidas pelos candidatos(as) a vereadores, considerando as eleições de 2008 a 2020.**
+Esse repósitorio possui scripts em R para cada eleição. 
 
-*Esse repósitorio possui os códigos em R para cada eleição*
+### Problema
+<hr class="style1">
+
+No decorrer da história, as mulheres obtiveram várias conquistas em relação a espaço nas esferas da sociedade, vide mercado de trabalho. Entretanto, ainda se vê 
+inserção bastante desigual no campo da política. Tendo isso em vista, procura-se entender, o tamanho da diferença de votos obtidos pelos candidatos(as) a vereadores, considerando as eleições de 2008 a 2020. 
+
+### Metodologia 
+<hr class="style1">
+
+Empregou-se a metodologia de decomposição de Oaxaca-Blinder para captar as diferenças de votos entre homens e mulheres.
+
+

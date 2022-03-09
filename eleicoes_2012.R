@@ -30,7 +30,7 @@ vot_ <- votacao %>%
 #Criando uma chave identificadora para os candidatos
 vot_$chave <- paste0(vot_$SQ_CANDIDATO, vot_$SIGLA_UF)
 
-#Agrupando o total de votos recebido por um candidato (identificado pela chave) no munic??pio
+#Agrupando o total de votos recebido por um candidato (identificado pela chave) no município
 vot_  %<>%
   group_by(chave) %>%
   summarise(TOTAL_VOTOS = sum (TOTAL_VOTOS))
@@ -52,13 +52,13 @@ inf_$chave <- paste0(inf_$SEQUENCIAL_CANDIDATO, inf_$SIGLA_UF)
 
 base_cand <- inner_join(vot_, inf_, by = "chave")
 
-#Tendo em vista a literatura, optou por excluir da amostra os candidatos que est?o tentando
-#reelei??o, isto ?, aqueles que ocupam o cargo de vereador naquele ano.
+#Tendo em vista a literatura, optou por excluir da amostra os candidatos que estão tentando
+#reeleição, isto é, aqueles que ocupam o cargo de vereador naquele ano.
 
 base_cand  %<>%
   filter(DESCRICAO_OCUPACAO != "VEREADOR")
 
-#Baixando a base de dados que tem informa??es sobre o IDHM 
+#Baixando a base de dados que tem informações sobre o IDHM 
 
 idhm <- read_excel("Atlas 2013_municipal, estadual e Brasil.xlsx", sheet = "MUN 91-00-10")
 
@@ -68,7 +68,7 @@ idhm_10 <- idhm %>%
   rename(codigo_ibge = Codmun7)
 
 #Como a base idhm utiliza o codigo do ibge para identificar municipio e o tse usa outra codigo
-#foi necess?rio usar uma base que tem a liga??oo dos dois codigos 
+#foi necessário usar uma base que tem a ligação dos dois codigos 
 
 cod <- fread("codigo_tse_ibge.txt", sep = ",", h = T)
 

@@ -1,4 +1,4 @@
-## Diferenças de votos entre homens e mulheres nas eleições municipais no Brasil. 
+## Diferenças de votos entre homens e mulheres nas eleições municipais no Brasil
 
 Esse repósitorio possui scripts em R para cada eleição. 
 
